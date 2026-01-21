@@ -1,0 +1,236 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    min-height: 50vh;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.img1 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero__title {
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 6rem;
+}
+
+.hero__text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+
+.botao {
+    margin: 3rem auto 0;
+    display: block;
+    padding: 0.6rem 1.5rem;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #000;
+    color: #ffff00;
+}
+
+/* ================= CARDÁPIO ================= */
+
+.produtos {
+    margin: 3rem 0 1rem;
+    text-align: center;
+    color: darkorange;
+    font-style: italic;
+}
+
+.galeria ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.diferent {
+    background-color: #ff8c00;
+    color: #fff;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.diferent:hover {
+    transform: scale(1.03);
+}
+
+.menor {
+    width: 100%;
+    max-height: 12rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.text2 {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* ================= SOBRE ================= */
+
+.pizza3 {
+    position: relative;
+    text-align: center;
+    margin: 3rem 0;
+    color: #fff;
+    padding-top: 1px;
+    padding-bottom: 22px;
+}
+
+.img3 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sobre {
+    margin-top: 1rem;
+}
+
+.sobre-nos {
+    margin-top: 0.5rem;
+}
+
+/* ================= CONTATO ================= */
+
+.contato {
+    text-align: center;
+    color: #ff8c00;
+    padding: 1rem 1rem;
+}
+
+.contato ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+/* ================= BOTÃO FINAL ================= */
+
+#bott {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#bot2 {
+    padding: 0.6rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.6rem;
+    background-color: darkorange;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#bot2:hover {
+    background-color: #000;
+    color: #ffff00;
+}
+
+/* ================= SOCIAL ================= */
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    list-style: none;
+    align-items: center;
+}
+
+.social img {
+    max-width: 80px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(0.9);
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: darkorange;
+    padding: 1rem;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .galeria ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .galeria ul {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+        font-size: 2.2rem;
+        padding-top: 4rem;
+    }
+
+    .hero__text {
+        font-size: 1.2rem;
+    }
+
+    .botao {
+        width: 70%;
+    }
+
+    /* .social img {
+        max-width: 60px;
+    } */
+}
